@@ -1,22 +1,26 @@
 # city-state-api-karan
-Main API Url: http://city-state-api-karan.herokuapp.com/api/
-
-:cid => Country Id => i.e. India=IN, UnitedS tates=US etc..
-:sid => State Id => i.e. Gujrat=GJ, Maharashtra=MH etc..
+## Main API Url: http://city-state-api-karan.herokuapp.com/api/
 
 
-Here are some of the endpoints to make GET req:
+### Some termionology
+#### :cid => Country Id => i.e. India=IN, UnitedS tates=US etc..
+#### :sid => State Id => i.e. Gujrat=GJ, Maharashtra=MH etc..
 
 
-Countries:
-/getAllCountries
-/getCountryByCode/:cid
+#### Here are some of the endpoints to make GET req:
 
-States:
-/getStatesOfCountry/:cid
-/getStateByCode/:sid
 
-Cities:
-/getAllCities
-/getCitiesOfCountry/:cid
-/getCitiesOfState/:cid/:sid
+1. Countries:
+- /getAllCountries
+- /getCountryByCode/:cid
+
+2. States:
+- /getStatesOfCountry/:cid
+- /getStateByCode/:sid
+
+3. Cities:
+- /getAllCities
+- /getCitiesOfCountry/:cid
+- /getCitiesOfState/:cid/:sid
+
+#### Will Update more detailed doc and other routes also.
