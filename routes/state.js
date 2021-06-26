@@ -6,8 +6,8 @@ router.get("/getStatesOfCountry/:cid", (req, res) => {
   res.json(csc.getStatesOfCountry(req.params.cid));
 });
 
-router.get("/getStateByCode/:sid", (req, res) => {
-  res.json(csc.getStateByCode(req.params.sid));
+router.get("/getStateByCode/:cid/:sid", (req, res) => {
+  res.json(csc.getStateByCode(req.params.cid,req.params.sid));
 });
 
 module.exports = router;
