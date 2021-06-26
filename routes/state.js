@@ -7,7 +7,7 @@ router.get("/getStatesOfCountry/:cid", (req, res) => {
 });
 
 router.get("/getStateByCode/:cid/:sid", (req, res) => {
-  res.json(csc.getStateByCode(req.params.cid,req.params.sid));
+  res.json(csc.getStateByCodeAndCountry(req.params.cid,req.params.sid));
 });
 
 module.exports = router;
